@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/codingjoe
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.johanneshoppe.com
+  * I am codingjoe (https://keybase.io/codingjoe) on keybase.
+  * I have a public key ASAuFva1kWqzJRdqRdheBeDsT18dN15wrp9nTPGZ4DR3vQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01202e16f6b5916ab325176a45d85e05e0ec4f5f1d375e70ae9f674cf199e03477bd0a",
+            "host": "keybase.io",
+            "kid": "01202e16f6b5916ab325176a45d85e05e0ec4f5f1d375e70ae9f674cf199e03477bd0a",
+            "uid": "07bb8b7206a929982a63c0e309b99119",
+            "username": "codingjoe"
+        },
+        "service": {
+            "hostname": "www.johanneshoppe.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.16"
+    },
+    "ctime": 1465981166,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1465981135,
+        "hash": "d346a7c2b6ff80bd2a146a2bd68198c6913f6a0dcdd7c13ae83ff6e075385860f20a083b54991ce26106a46b7d45fff4cfd7505366cfe20ee54620d620e9396e",
+        "seqno": 486358
+    },
+    "prev": "11d144ba15a1f6447390f80978ae25615dca2493e5cf98fe4e6e51db54981677",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+g6Rib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgLhb2tZFqsyUXakXYXgXg7E9fHTdecK6fZ0zxmeA0d70Kp3BheWxvYWTFAv17ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMmUxNmY2YjU5MTZhYjMyNTE3NmE0NWQ4NWUwNWUwZWM0ZjVmMWQzNzVlNzBhZTlmNjc0Y2YxOTllMDM0NzdiZDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMmUxNmY2YjU5MTZhYjMyNTE3NmE0NWQ4NWUwNWUwZWM0ZjVmMWQzNzVlNzBhZTlmNjc0Y2YxOTllMDM0NzdiZDBhIiwidWlkIjoiMDdiYjhiNzIwNmE5Mjk5ODJhNjNjMGUzMDliOTkxMTkiLCJ1c2VybmFtZSI6ImNvZGluZ2pvZSJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoid3d3LmpvaGFubmVzaG9wcGUuY29tIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xNiJ9LCJjdGltZSI6MTQ2NTk4MTE2NiwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDY1OTgxMTM1LCJoYXNoIjoiZDM0NmE3YzJiNmZmODBiZDJhMTQ2YTJiZDY4MTk4YzY5MTNmNmEwZGNkZDdjMTNhZTgzZmY2ZTA3NTM4NTg2MGYyMGEwODNiNTQ5OTFjZTI2MTA2YTQ2YjdkNDVmZmY0Y2ZkNzUwNTM2NmNmZTIwZWU1NDYyMGQ2MjBlOTM5NmUiLCJzZXFubyI6NDg2MzU4fSwicHJldiI6IjExZDE0NGJhMTVhMWY2NDQ3MzkwZjgwOTc4YWUyNTYxNWRjYTI0OTNlNWNmOThmZTRlNmU1MWRiNTQ5ODE2NzciLCJzZXFubyI6OCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxECFKRBN/PhCHJn1ldv+Lr8etWeXfxskc5DlfcFeZ8fctAI9BQvc44/Lak2jQCLWORJwih044WWGnpwnBJ2McXoMqHNpZ190eXBlIKN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/codingjoe
+
+==================================================================
