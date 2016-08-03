@@ -138,7 +138,6 @@ section {
 
     section {
         page-break-before: always;
-        page-break-inside: avoid;
     }
 
 	table, tbody {
