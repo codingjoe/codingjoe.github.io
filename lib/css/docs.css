@@ -140,6 +140,11 @@ section {
         page-break-before: always;
         page-break-inside: avoid;
     }
+
+	tr {
+		page-break-inside: avoid;
+	}
+
 	.page-break {
 		page-break-after: always;
 	}
