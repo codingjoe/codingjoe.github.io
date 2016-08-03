@@ -141,6 +141,10 @@ section {
         page-break-inside: avoid;
     }
 
+	table, tbody {
+		page-break-inside: auto;
+	}
+
 	tr {
 		page-break-inside: avoid;
 		page-break-before: auto;
