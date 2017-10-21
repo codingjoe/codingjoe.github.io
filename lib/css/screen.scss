@@ -1,0 +1,242 @@
+$color_1: black;
+$color_2: #bbb;
+$color_3: white;
+$color_4: #ccc;
+$color_5: #333;
+$social-media: (github, #66cc33), (linked-in, #006699), (facebook, #3b5997), (twitter, #42aae1), (email, #f9cd66), (stackexchange, #215196);
+$background_color_1: white;
+$font-size-base: 0.85rem;
+
+@import url( 'https://fonts.googleapis.com/css?family=Josefin+Slab:600i');
+@import "bootstrap/scss/bootstrap";
+@import "glyphicons-social";
+
+body {
+  background: brown;
+  background: url('../../images/wood.png');
+  // background-size: 215px 278px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+@each $social, $color in $social-media {
+  .#{$social} {
+    color: hsl(hue($color), 25, 75);
+    &:hover {
+      color: #{$color};
+    }
+  }
+}
+
+#contact_images {
+  span.social {
+    padding: 0 20px 20px 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+#mainNav {
+  padding-left: 320px;
+  margin-top: 25px;
+  display: block;
+  left: 50%;
+  height: 50px;
+  width: 870px;
+  margin: 0 0 0 -440px;
+  color: $color_1;
+  z-index: 10;
+  text-align: left;
+  box-shadow: 0 20px 62px rgba(0,0,0,.75);
+  background: rgba(0,0,0,.85);
+  border-radius: 0.5em;
+
+  a {
+    font: italic 18pt/2em 'Josefin Slab', Georgia, Times, serif;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 0.4em;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  .active {
+    a {
+      color: $color_3;
+    }
+  }
+}
+
+.default {
+  position: absolute;
+  top: 476px;
+}
+
+.fixed {
+  position: fixed;
+  top: 25px;
+}
+
+.nav {
+  li {
+    display: inline;
+    background: transparent;
+
+    a {
+      color: $color_2;
+      display: inline;
+    }
+  }
+}
+
+#logo {
+  position: absolute;
+  top: -42px;
+  left: 0;
+}
+
+#footer {
+  background: #222;
+  color: $color_4;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  z-index: 0;
+  overflow: none;
+  height: 100%;
+  box-shadow: 0 20px 50px rgba(0,0,0,.75);
+
+  p {
+    line-height: 1em;
+  }
+}
+
+.table.cv {
+  td,
+  th {
+    &:first-child {
+      width: 130px;
+    }
+  }
+}
+
+#figure1 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 401px;
+
+  img {
+    padding: 0;
+  }
+}
+@media screen {
+  #mainWrapper {
+    position: relative;
+    top: 50px;
+    width: 830px;
+    left: 50%;
+    margin: 0 0 0 -400px;
+  }
+
+  .no-screen {
+    display: none;
+  }
+
+  section {
+    margin: 0;
+    box-shadow: none;
+    border: none;
+    padding: 100px;
+  }
+
+  .paper {
+    background: white;
+    padding: 100px;
+    overflow: none;
+    margin: 100px 0;
+    position: relative;
+    bottom: 0;
+    z-index: 0;
+    overflow: none;
+    box-shadow: 0 20px 50px rgba(0,0,0,.75);
+  }
+}
+@media print {
+   @page{
+    size: portrait;
+  }
+
+  body {
+    background-color: $background_color_1;
+    background: none;
+    margin: none;
+    font-size: 0.8rem;
+  }
+
+  * {
+    background-color: $background_color_1;
+  }
+
+  h1 {
+    display: none;
+  }
+
+  table {
+    page-break-inside: auto;
+  }
+
+  tbody {
+    page-break-inside: auto;
+  }
+
+  tr, dl {
+    page-break-inside: avoid;
+    page-break-before: auto;
+    page-break-after: avoid;
+  }
+
+  .page-break {
+    page-break-after: always;
+  }
+
+  a {
+    color: $color_5;
+  }
+
+  .dont-print {
+    display: none;
+  }
+
+  nav#mainNav {
+    display: none;
+  }
+
+  .span2 {
+    display: block;
+    width: 55mm;
+    float: left;
+  }
+
+  section {
+    page-break-before: auto;
+    page-break-inside: avoid;
+    > blockquote.float-right.text-right {
+      display: none;
+    }
+  }
+
+  blockquote {
+    border: none;
+  }
+
+  .base-info {
+    float: right;
+    width: 100mm;
+  }
+}
