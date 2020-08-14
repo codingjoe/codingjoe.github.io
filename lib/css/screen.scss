@@ -1,31 +1,57 @@
-$color_1: black;
+$color_1: #1b1e21;
 $color_2: #bbb;
-$color_3: white;
+$color_3: ghostwhite;
 $color_4: #ccc;
-$color_5: #333;
+$color_5: dimgrey;
 $social-media: (github, #66cc33), (linked-in, #006699), (facebook, #3b5997), (twitter, #42aae1), (email, #f9cd66), (stackexchange, #215196);
 $background_color_1: white;
 $font-size-base: 0.85rem;
 
-@import url( 'https://fonts.googleapis.com/css?family=Josefin+Slab:600i');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Vollkorn:wght@500&display=swap');
 @import "bootstrap/scss/bootstrap";
 @import "glyphicons-social";
 
 body {
-  background: brown;
-  background: url('../../images/wood.png');
-  // background-size: 215px 278px;
-  background-repeat: repeat;
+  background-color: #5b6467;
+  background-image: linear-gradient(315deg, #8b939a 0%, #5b6467 74%);
   background-attachment: fixed;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
+  color: #1b1e21;
 }
 
 @each $social, $color in $social-media {
   .#{$social} {
     color: hsl(hue($color), 25, 75);
+
     &:hover {
       color: #{$color};
     }
+  }
+}
+
+@each $hl in (1, 2, 3, 4, 5, 6) {
+  h#{$hl} {
+    font-family: 'Vollkorn', serif;
+    font-weight: 500;
+    letter-spacing: -.02rem;
+    color: $color_1;
+    margin: 2.5rem 0 1em;
+  }
+}
+
+.shadow {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .70);
+}
+
+a {
+
+  color: $color_5;
+  text-decoration: none;
+
+  &:hover, &:active, &:focus {
+    color: $color_5;
+    text-decoration: underline;
   }
 }
 
@@ -40,25 +66,23 @@ body {
 }
 
 #mainNav {
+  @extend .shadow;
   padding-left: 320px;
-  margin-top: 25px;
   display: block;
   left: 50%;
   height: 50px;
   width: 870px;
   margin: 0 0 0 -440px;
-  color: $color_1;
   z-index: 10;
   text-align: left;
-  box-shadow: 0 20px 62px rgba(0,0,0,.75);
-  background: rgba(0,0,0,.85);
+  background: #1b1e21;
   border-radius: 0.5em;
 
   a {
-    font: italic 18pt/2em 'Josefin Slab', Georgia, Times, serif;
-    font-weight: 600;
+    font: normal 18pt/2em 'Vollkorn', Georgia, Times, serif;
+    font-weight: 500;
     text-decoration: none;
-    padding: 0 0.4em;
+    padding: 0 0 0 2rem;
 
     &:hover {
       background: transparent;
@@ -101,15 +125,14 @@ body {
 }
 
 #footer {
+  @extend .shadow;
   background: #222;
   color: $color_4;
   padding: 15px;
   position: relative;
   bottom: 0;
   z-index: 0;
-  overflow: none;
   height: 100%;
-  box-shadow: 0 20px 50px rgba(0,0,0,.75);
 
   p {
     line-height: 1em;
@@ -119,15 +142,20 @@ body {
 .table.cv {
   td,
   th {
+    border: none;
+    padding: .5rem .3rem;
+
     &:first-child {
-      width: 130px;
+      width: 160px;
+      font-family: Vollkorn, serif;
+      color: $color_5;
     }
   }
 }
 
 #figure1 {
+  @extend .shadow;
   position: relative;
-  box-shadow: 0 20px 50px rgba(0,0,0,.75);
   padding: 0;
   margin: 0;
   height: 401px;
@@ -136,6 +164,7 @@ body {
     padding: 0;
   }
 }
+
 @media screen {
   #mainWrapper {
     position: relative;
@@ -157,26 +186,25 @@ body {
   }
 
   .paper {
-    background: white;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .70);
+    background: $color_3;
     padding: 100px;
-    overflow: none;
     margin: 100px 0;
     position: relative;
     bottom: 0;
     z-index: 0;
-    overflow: none;
-    box-shadow: 0 20px 50px rgba(0,0,0,.75);
   }
 }
+
 @media print {
-   @page{
+  @page {
     size: portrait;
+    margin: 24mm 24mm;
   }
 
   body {
     background-color: $background_color_1;
     background: none;
-    margin: none;
     font-size: 0.8rem;
   }
 
@@ -227,6 +255,7 @@ body {
   section {
     page-break-before: auto;
     page-break-inside: avoid;
+
     > blockquote.float-right.text-right {
       display: none;
     }
@@ -234,6 +263,10 @@ body {
 
   blockquote {
     border: none;
+  }
+
+  .blockquote-footer {
+    color: $color_5;
   }
 
   .base-info {
