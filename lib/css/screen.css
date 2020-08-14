@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Vollkorn:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Vollkorn:wght@400;500&display=swap");
 /*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -8474,7 +8474,10 @@ h1 {
   font-weight: 500;
   letter-spacing: -0.02rem;
   color: #1b1e21;
-  margin: 2.5rem 0 1em;
+  margin: 2.5rem 0 0.75rem;
+}
+h1:first-child {
+  margin: 0 0 0.75rem;
 }
 
 h2 {
@@ -8482,7 +8485,10 @@ h2 {
   font-weight: 500;
   letter-spacing: -0.02rem;
   color: #1b1e21;
-  margin: 2.5rem 0 1em;
+  margin: 2.5rem 0 0.75rem;
+}
+h2:first-child {
+  margin: 0 0 0.75rem;
 }
 
 h3 {
@@ -8490,7 +8496,10 @@ h3 {
   font-weight: 500;
   letter-spacing: -0.02rem;
   color: #1b1e21;
-  margin: 2.5rem 0 1em;
+  margin: 2.5rem 0 0.75rem;
+}
+h3:first-child {
+  margin: 0 0 0.75rem;
 }
 
 h4 {
@@ -8498,7 +8507,10 @@ h4 {
   font-weight: 500;
   letter-spacing: -0.02rem;
   color: #1b1e21;
-  margin: 2.5rem 0 1em;
+  margin: 2.5rem 0 0.75rem;
+}
+h4:first-child {
+  margin: 0 0 0.75rem;
 }
 
 h5 {
@@ -8506,7 +8518,10 @@ h5 {
   font-weight: 500;
   letter-spacing: -0.02rem;
   color: #1b1e21;
-  margin: 2.5rem 0 1em;
+  margin: 2.5rem 0 0.75rem;
+}
+h5:first-child {
+  margin: 0 0 0.75rem;
 }
 
 h6 {
@@ -8514,7 +8529,10 @@ h6 {
   font-weight: 500;
   letter-spacing: -0.02rem;
   color: #1b1e21;
-  margin: 2.5rem 0 1em;
+  margin: 2.5rem 0 0.75rem;
+}
+h6:first-child {
+  margin: 0 0 0.75rem;
 }
 
 .shadow, #figure1, #footer, #mainNav {
@@ -8528,6 +8546,16 @@ a {
 a:hover, a:active, a:focus {
   color: dimgrey;
   text-decoration: underline;
+}
+
+small {
+  color: dimgrey;
+  font-size: smaller;
+  font-weight: 400;
+}
+
+strong, b {
+  font-weight: 600;
 }
 
 #contact_images span.social {
@@ -8667,10 +8695,6 @@ a:hover, a:active, a:focus {
     background-color: white;
   }
 
-  h1 {
-    display: none;
-  }
-
   table {
     page-break-inside: auto;
   }
@@ -8721,11 +8745,6 @@ a:hover, a:active, a:focus {
 
   .blockquote-footer {
     color: dimgrey;
-  }
-
-  .base-info {
-    float: right;
-    width: 100mm;
   }
 }
 

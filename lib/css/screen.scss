@@ -7,7 +7,7 @@ $social-media: (github, #66cc33), (linked-in, #006699), (facebook, #3b5997), (tw
 $background_color_1: white;
 $font-size-base: 0.85rem;
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Vollkorn:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Vollkorn:wght@400;500&display=swap');
 @import "bootstrap/scss/bootstrap";
 @import "glyphicons-social";
 
@@ -36,7 +36,10 @@ body {
     font-weight: 500;
     letter-spacing: -.02rem;
     color: $color_1;
-    margin: 2.5rem 0 1em;
+    margin: 2.5rem 0 .75rem;
+    &:first-child {
+      margin: 0 0 .75rem;
+    }
   }
 }
 
@@ -53,6 +56,16 @@ a {
     color: $color_5;
     text-decoration: underline;
   }
+}
+
+small {
+  color: $color_5;
+  font-size: smaller;
+  font-weight: 400;
+}
+
+strong, b {
+  font-weight: 600;
 }
 
 #contact_images {
@@ -212,10 +225,6 @@ a {
     background-color: $background_color_1;
   }
 
-  h1 {
-    display: none;
-  }
-
   table {
     page-break-inside: auto;
   }
@@ -269,8 +278,4 @@ a {
     color: $color_5;
   }
 
-  .base-info {
-    float: right;
-    width: 100mm;
-  }
 }
