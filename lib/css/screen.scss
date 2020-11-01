@@ -86,10 +86,9 @@ strong, b {
   @extend .shadow;
   padding-left: 320px;
   display: block;
-  left: 50%;
   height: 50px;
   width: 870px;
-  margin: 0 0 0 -440px;
+  margin: 0 auto;
   z-index: 10;
   text-align: left;
   background: #1b1e21;
@@ -175,10 +174,10 @@ strong, b {
   position: relative;
   padding: 0;
   margin: 0;
-  height: 401px;
 
   img {
     padding: 0;
+    max-width: 100%;
   }
 }
 
@@ -186,9 +185,8 @@ strong, b {
   #mainWrapper {
     position: relative;
     top: 50px;
-    width: 830px;
-    left: 50%;
-    margin: 0 0 0 -400px;
+    max-width: 830px;
+    margin: 0 auto;
   }
 
   .no-screen {
@@ -206,7 +204,7 @@ strong, b {
     box-shadow: 0 0 1rem rgba(0, 0, 0, .70);
     background: $color_3;
     padding: 100px;
-    margin: 100px 0;
+    margin: 2.5rem 0;
     position: relative;
     bottom: 0;
     z-index: 0;
