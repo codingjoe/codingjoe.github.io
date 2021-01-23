@@ -8687,6 +8687,7 @@ strong, b {
     padding: 1rem;
     margin: 0;
     box-shadow: none;
+    background: whitesmoke;
   }
 }
 @media only screen and (max-width: 600px) {
