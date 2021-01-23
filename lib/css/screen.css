@@ -8418,6 +8418,10 @@ a.text-dark:focus, a.text-dark:hover {
   content: "";
 }
 
+:root {
+  font-size: 16px;
+}
+
 body {
   background-color: #5b6467;
   background-image: linear-gradient(315deg, #8b939a 0%, #5b6467 74%);
@@ -8535,7 +8539,7 @@ h6:first-child {
   margin: 0 0 0.75rem;
 }
 
-.shadow, #figure1, #footer, #mainNav {
+.shadow, #figure1, #footer {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
 }
 
@@ -8567,30 +8571,6 @@ strong, b {
 }
 #contact_images a {
   text-decoration: none;
-}
-
-#mainNav {
-  padding-left: 320px;
-  display: block;
-  height: 50px;
-  width: 870px;
-  margin: 0 auto;
-  z-index: 10;
-  text-align: left;
-  background: #1b1e21;
-  border-radius: 0.5em;
-}
-#mainNav a {
-  font: normal 18pt/2em "Vollkorn", Georgia, Times, serif;
-  font-weight: 500;
-  text-decoration: none;
-  padding: 0 0 0 2rem;
-}
-#mainNav a:hover {
-  background: transparent;
-}
-#mainNav .active a {
-  color: ghostwhite;
 }
 
 .default {
@@ -8642,6 +8622,12 @@ strong, b {
   font-family: Vollkorn, serif;
   color: dimgrey;
 }
+@media only screen and (max-width: 600px) {
+  .table.cv td:first-child,
+.table.cv th:first-child {
+    width: 120px;
+  }
+}
 
 #figure1 {
   position: relative;
@@ -8652,6 +8638,11 @@ strong, b {
   padding: 0;
   max-width: 100%;
 }
+@media only screen and (max-width: 600px) {
+  #figure1 {
+    display: block;
+  }
+}
 
 @media screen {
   #mainWrapper {
@@ -8660,18 +8651,27 @@ strong, b {
     max-width: 830px;
     margin: 0 auto;
   }
-
+}
+@media only screen and (max-width: 600px) {
+  #mainWrapper {
+    top: 0;
+    padding: 0;
+  }
+}
+@media screen {
   .no-screen {
     display: none;
   }
-
+}
+@media screen {
   section {
     margin: 0;
     box-shadow: none;
     border: none;
     padding: 100px;
   }
-
+}
+@media screen {
   .paper {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
     background: ghostwhite;
@@ -8680,6 +8680,29 @@ strong, b {
     position: relative;
     bottom: 0;
     z-index: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .paper {
+    padding: 1rem;
+    margin: 0;
+    box-shadow: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  blockquote.float-right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dont-print {
+    display: none;
+  }
+
+  #contact, #footer {
+    display: block;
+    box-shadow: none;
   }
 }
 @media print {

@@ -11,6 +11,16 @@ $font-size-base: 0.85rem;
 @import "bootstrap/scss/bootstrap";
 @import "glyphicons-social";
 
+@mixin mobile {
+  @media only screen and (max-width: 600px) {
+    @content
+  }
+}
+
+:root {
+  font-size: 16px;
+}
+
 body {
   background-color: #5b6467;
   background-image: linear-gradient(315deg, #8b939a 0%, #5b6467 74%);
@@ -82,36 +92,6 @@ strong, b {
   }
 }
 
-#mainNav {
-  @extend .shadow;
-  padding-left: 320px;
-  display: block;
-  height: 50px;
-  width: 870px;
-  margin: 0 auto;
-  z-index: 10;
-  text-align: left;
-  background: #1b1e21;
-  border-radius: 0.5em;
-
-  a {
-    font: normal 18pt/2em 'Vollkorn', Georgia, Times, serif;
-    font-weight: 500;
-    text-decoration: none;
-    padding: 0 0 0 2rem;
-
-    &:hover {
-      background: transparent;
-    }
-  }
-
-  .active {
-    a {
-      color: $color_3;
-    }
-  }
-}
-
 .default {
   position: absolute;
   top: 476px;
@@ -165,6 +145,10 @@ strong, b {
       width: 160px;
       font-family: Vollkorn, serif;
       color: $color_5;
+
+      @include mobile {
+        width: 120px;
+      }
     }
   }
 }
@@ -179,6 +163,10 @@ strong, b {
     padding: 0;
     max-width: 100%;
   }
+
+  @include mobile {
+    display: block;
+  }
 }
 
 @media screen {
@@ -187,6 +175,10 @@ strong, b {
     top: 50px;
     max-width: 830px;
     margin: 0 auto;
+    @include mobile {
+      top: 0;
+      padding: 0;
+    }
   }
 
   .no-screen {
@@ -208,6 +200,29 @@ strong, b {
     position: relative;
     bottom: 0;
     z-index: 0;
+
+    @include mobile {
+      padding: 1rem;
+      margin: 0;
+      box-shadow: none;
+    }
+  }
+}
+
+blockquote.float-right {
+  @include mobile {
+    display: none;
+  }
+}
+
+@include mobile {
+  .dont-print {
+    display: none;
+  }
+
+  #contact, #footer {
+    display: block;
+    box-shadow: none;
   }
 }
 
