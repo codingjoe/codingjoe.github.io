@@ -68,6 +68,12 @@ a {
   }
 }
 
+em {
+  color: $color_5;
+  text-decoration: none;
+  font-style: normal;
+}
+
 small {
   color: $color_5;
   font-size: smaller;
