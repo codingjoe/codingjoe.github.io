@@ -8614,7 +8614,7 @@ strong, b {
 .table.cv td,
 .table.cv th {
   border: none;
-  padding: 0.5rem 0.3rem;
+  padding: 0.3rem 0.3rem;
 }
 .table.cv td:first-child,
 .table.cv th:first-child {
