@@ -13,9 +13,19 @@
       color: dimgrey;
       font-style: normal;
     }
+    .paper {
+      padding: 5rem;
+    }
+    h2 {
+      margin: 2rem 0 0.75rem;
+    }
     @media print {
+      :root {
+        font-size: 12pt;
+      }
       .paper {
         margin: 0 !important;
+        padding: 0 !important;
         page-break-after: always;
         page-break-inside: avoid;
       }
@@ -36,11 +46,28 @@
         <footer class="blockquote-footer">Mark Twain</footer>
       </blockquote>
       <div class="clearfix"></div>
-      <div class="page-header">
-        <h1>
+      <div class="page-header" style="display: flex; justify-content: space-between">
+        <h1 style="margin-block-end: 0">
           Johannes Maron<br>
           <small>née Hoppe, 1988 Brandenburg (Havel), Germany</small>
         </h1>
+        <p style="text-align: right;">
+          <a href="tel:+4915114455910">
+            +49 1511 4455910
+          </a>
+            <br>
+          <a href="mailto:johannes@maron.family">
+            johannes@maron.family
+          </a>
+          <br>
+          <a href="https://www.linkedin.com/in/codingjoe" target="_blank">
+            linkedin.com/in/codingjoe
+          </a>
+            <br>
+            <a href="https://github.com/codingjoe" target="_blank">
+              github.com/codingjoe
+            </a>
+        </p>
       </div>
       <h2>Work Experience</h2>
       <table class="table cv">
@@ -50,7 +77,8 @@
             <strong>Co-Founder & CTO</strong>, <a href="//www.voiio.de/" target="_blank" class="vitapop" data-original-title="voiio GmbH" data-content="voiio is poviding family services to work-life balance conscious companies.">voiio</a>
             <ul>
               <li>responsible for the B2C product development, platform operations & content creation</li>
-              <li>leading teams of teams & growing the company to 50 people</li>
+              <li>leading multiple teams: Engineering, Content & Category-Management</li>
+              <li>growing voiio from seed to profitability and from 0 to 50 people</li>
             </ul>
           </td>
         </tr>
@@ -68,7 +96,7 @@
           <td>
             <strong>Senior Venture Developer</strong>, <a href="//www.thermondo.de/" target="_blank" class="vitapop" data-original-title="Thermondo GmbH" data-content="Thermondo is a clean tech startup. We retrofit heatings. Heat and hot water rank second in domestic energy consumption in Germany. By renewing heatings we save CO₂ and fight climate change.">Thermondo (exit)</a>
             <ul>
-              <li>in-house consulting reporting to the CEO</li>
+              <li>in-house consulting position reporting directly to the CEO</li>
               <li>restructuring the customer service organization</li>
             </ul>
           </td>
@@ -79,7 +107,8 @@
             <strong>Team Lead Software Engineering</strong>, <a href="//www.thermondo.de/" target="_blank" class="vitapop" data-original-title="Thermondo GmbH" data-content="Thermondo is a clean tech startup. We retrofit heatings. Heat and hot water rank second in domestic energy consumption in Germany. By renewing heatings we save CO₂ and fight climate change.">Thermondo (exit)</a>
             <ul>
               <li>responsible for the software engineer, reporting to the CTO</li>
-              <li>leading multiple teams & growing the company to 800 people</li>
+              <li>leading multiple teams: Android, Backend & Frontend</li>
+              <li>hyperscaling Thermondo from 20 to 800 people</li>
             </ul>
           </td>
         </tr>
@@ -89,6 +118,7 @@
             <strong>Founder &amp; Managing Partner</strong>, <a href="http://veerkant.com/" class="vitapop" data-original-title="Veerkant" data-content="Discover, experience and share your favourite artworks at Veerkant, the fine art online gallery that gives you an easy access to well curated artists and their paintings. Exploring amazing art has never been so simple.">Veerkant (closed)</a>
             <ul>
               <li>managing a seed state fine art startup</li>
+              <li>founded & lead company from zero to break even</li>
             </ul>
         </tr>
         <tr>
@@ -140,28 +170,27 @@
         </tr>
 
         </table>
-      <div class="row">
-        <div class="col-3">
+      <div style="display: flex; flex-direction: row; justify-content: space-between; gap: 1.25em;">
+        <div>
           <h4>Languages</h4>
           <dl>
             <dt>German (C2)</dt>
             <dt>English (C2)</dt>
-            <dt style="font-weight: normal">Spanish (A1)</dt>
-            <dt style="font-weight: normal">Italian (A1)</dt>
-            <dt style="font-weight: normal">Japanese (A1)</dt>
+            <dt>Python (S)</dt>
+            <dt>JavaScript (A)</dt>
+            <dt>C++, Java (B)</dt>
           </dl>
         </div>
-
-        <div class="col-4">
-          <h4>Profiles</h4>
+        <div>
+          <h4>Volunteering</h4>
           <dl>
-            <dt>GitHub</dt>
-            <dd><a href="https://github.com/codingjoe" target="_blank">github.com/codingjoe</a></dd>
-            <dt>LinkedIn</dt>
-            <dd><a href="https://www.linkedin.com/in/codingjoe" target="_blank">linkedin.com/in/codingjoe</a></dd>
+            <dt>Python Software Foundation</dt>
+            <dd>Sponsoring Member</dd>
+            <dt>Django Software Foundation</dt>
+            <dd>Sponsor & Contributor</dd>
           </dl>
         </div>
-        <div class="col-5">
+        <div style="width: max-content">
           <h4>Awards &amp; Memberships</h4>
           <dl>
             <dt>Business Plan Competition</dt>
@@ -170,7 +199,6 @@
             <dd>high IQ society (since 2008)</dd>
           </dl>
         </div>
-
       </div>
     </section>
 
